@@ -1,7 +1,9 @@
 import Head from "next/head";
 import styles from "./MainLayout.module.css";
-import {NavBar} from "../NavBar"
+
 import { FC } from "react";
+import { Navbar } from "../Navbar";
+
 
 
 export const MainLayout: FC = ({children}) => {
@@ -13,7 +15,7 @@ export const MainLayout: FC = ({children}) => {
             <link rel="icon" href="/favicon.ico" />
           </Head>
     
-          <NavBar />
+          <Navbar />
     
           <main className={styles.main}>
                 {children}
